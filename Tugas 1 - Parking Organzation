@@ -1,1 +1,47 @@
+import pandas as pd
+import numpy as np
 
+class ParkirMobil :
+    
+    def __init__ (self):
+        self.Number = []
+        self.no_plat_mobil = []
+        
+    def tambah(self):
+        no = 0
+        for i in range (int(input("Berapa mobil yang ingin parkir : "))):
+            no +=1
+            Plat = int(input("Masukkan nomor plat mobil : "))
+            self.Number.append(no)
+            self.no_plat_mobil.append(Plat)
+            
+    def keluarkan(self):
+        N = 0 
+        mobil = int(input("Masukkan no antrian mobil yang mau dikeluarkan : "))
+        if mobil == self.Number[N] :
+            self.Number.pop()
+            self.no_plat_mobil.pop(0)
+            print("Mobil dihapus")
+        elif mobil > self.Number[N]:
+            print("Peringatan!!! Harus mengeluarkan mobil yang terdahulu")
+    
+    def tampilkan(self):
+        tampil = pd.DataFrame([self.Number, self.no_plat_mobil]).T
+        tampil.rename(columns=({0:'NO', 1:'Plat Mobil'}), inplace = True)
+        print(tampil)
+        
+        
+Parkir = ParkirMobil()
+print()
+ulang = 0
+while ulang == 0 :
+    pilih = int(input("Menu:\n1. Tambah Mobil untuk Diparkir\n2. Keluarkan Mobil\n3. Tampilkan Parkir MObil\n4. Exit\nPILIH:"))
+    if pilih==1 :
+        Parkir.tambah()
+    elif pilih==2 :
+        Parkir.keluarkan()
+    elif pilih==3:
+        Parkir.tampilkan()
+    else:
+        print("Terimakasih")
+        ulang=1

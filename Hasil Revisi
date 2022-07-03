@@ -27,6 +27,7 @@ class ParkirMobil :
         print(jumlah, "Plat mobil ditambahkan")
         tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
         tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
+        tampil.set_index('Antrian', inplace=True)
         print(tampil)
   
     def duplicate(self, x):
@@ -51,6 +52,7 @@ class ParkirMobil :
     def tampilkan(self):
         tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
         tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
+        tampil.set_index('Antrian', inplace=True)
         print(tampil)
 
 Parkir = ParkirMobil()

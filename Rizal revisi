@@ -4,7 +4,6 @@ class ParkirMobil :
     def __init__ (self):
         self.Number = []
         self.no_plat_mobil = []
-        self.merek_mobil = []
         self.jam_parkir = []
         
     def tambah(self):       
@@ -35,7 +34,7 @@ class ParkirMobil :
 
     def keluarkan(self):
         N = 0
-        tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.merek_mobil, self.jam_parkir]).T
+        tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
         tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
         print(tampil)
         mobil = int(input("Masukkan nomor antrian mobil yang mau dikeluarkan: "))

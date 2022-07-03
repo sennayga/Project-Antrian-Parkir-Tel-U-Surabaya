@@ -29,6 +29,7 @@ class ParkirMobil :
         tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
         tampil.set_index('Antrian', inplace=True)
         print(tampil)
+        print('')
   
     def duplicate(self, x):
         for Plat in self.no_plat_mobil :
@@ -54,6 +55,7 @@ class ParkirMobil :
         tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
         tampil.set_index('Antrian', inplace=True)
         print(tampil)
+        print('')
 
 Parkir = ParkirMobil()
 ulang = 0

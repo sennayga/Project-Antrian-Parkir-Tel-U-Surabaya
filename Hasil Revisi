@@ -1,4 +1,3 @@
-import pandas as pd
 
 class ParkirMobil :
     def __init__ (self):
@@ -7,6 +6,7 @@ class ParkirMobil :
         self.jam_parkir = []
         global antrian
         antrian = []
+
     def tambah(self):
         jumlah = int(input("Jumlah mobil yang akan parkir: "))
         for i in range (jumlah):
@@ -26,10 +26,10 @@ class ParkirMobil :
         print()
         print(jumlah, "Plat mobil ditambahkan")
         tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
-        tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
+        tampil.rename(columns=({0:'Antrian', 1:'  Plat Mobil', 2:'  Jam Parkir'}), inplace = True)
         tampil.set_index('Antrian', inplace=True)
         print(tampil)
-        print('')
+        print()
   
     def duplicate(self, x):
         for Plat in self.no_plat_mobil :
@@ -40,31 +40,31 @@ class ParkirMobil :
     def keluarkan(self):
         N = 0
         tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
-        tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
+        tampil.rename(columns=({0:'Antrian', 1:'  Plat Mobil', 2:'  Jam Parkir'}), inplace = True)
+        tampil.set_index('Antrian', inplace=True)
         print(tampil)
         mobil = int(input("Masukkan nomor antrian mobil yang mau dikeluarkan: "))
         if mobil == self.Number[N]:
             self.Number.pop()
             self.no_plat_mobil.pop(0)
+            self.jam_parkir.pop(0)
             print("\nMobil dikeluarkan")
         elif mobil > self.Number[N]:
             print("\n\t   !!!PERINGATAN!!! \nHarus mengeluarkan mobil yang depan dahulu.")
 
     def tampilkan(self):
         tampil = pd.DataFrame([self.Number, self.no_plat_mobil, self.jam_parkir]).T
-        tampil.rename(columns=({0:'Antrian', 1:'Plat Mobil', 2:'Jam Parkir'}), inplace = True)
-        tampil.set_index('Antrian', inplace=True)
+        tampil.rename(columns=({0:'Antrian', 1:'  Plat Mobil', 2:'  Jam Parkir'}), inplace = True)
+        tampil.set_index('  Antrian', inplace=True)
         print(tampil)
         print('')
 
 Parkir = ParkirMobil()
 ulang = 0
 while ulang == 0 :
-    pilih = int(input("Menu:\n1. Tambah Antrian Mobil\n2. Keluarkan Mobil\n3. Tampilkan antrian parkir mobil\n4. Exit\nMasukan pilihan: "))
-    print('')
     print("_"*35)
-    print("  PARKIR MOBIL IT TELKOM SURABAYA")
-    print("_"*35)    
+    print("  PARKIR MOBIL IT TELKOM SURABAYA\n")
+    pilih = int(input("Menu:\n1. Tambah Antrian Mobil\n2. Keluarkan Mobil\n3. Tampilkan antrian parkir mobil\n4. Exit\nMasukan pilihan: "))  
     print()
     if pilih == 1 :
         Parkir.tambah()

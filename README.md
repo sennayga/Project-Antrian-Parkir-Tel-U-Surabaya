@@ -1,2 +1,2 @@
-# Tugas-Besar-Alstrukda-Sem-2
+# Tugas-Besar-Algoritma Struktur Data-Semester-2
 ### Code & PPT

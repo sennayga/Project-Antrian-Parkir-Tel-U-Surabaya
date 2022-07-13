@@ -1,5 +1,6 @@
-# Tugas Besar Algoritma Struktur Data Semester 2
-## Syntax Program & PPT - Kasus 1
+# Tugas Besar Algoritma Struktur Data Semester 
+## Kasus 1 - Program Antrian Parkir ITTS
+## Syntax Program & PPT
  
  ### Anggota kelompok 5:
  ### 1. Thesion Marta - 1206210004

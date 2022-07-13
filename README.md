@@ -1,5 +1,5 @@
 # Kasus 1 - Program Antrian Parkir ITTS
-## Syntax Program & PPT
+## Github Berisikan Syntax Program & PPT
  
  ### Anggota kelompok 5:
  ### 1. Thesion Marta - 1206210004

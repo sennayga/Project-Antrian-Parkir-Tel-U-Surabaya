@@ -1,5 +1,4 @@
-# Tugas Besar Algoritma Struktur Data Semester 
-## Kasus 1 - Program Antrian Parkir ITTS
+# Kasus 1 - Program Antrian Parkir ITTS
 ## Syntax Program & PPT
  
  ### Anggota kelompok 5:

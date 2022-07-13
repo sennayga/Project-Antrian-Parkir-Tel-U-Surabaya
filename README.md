@@ -1,5 +1,5 @@
 # Kasus 1 - Program Antrian Parkir ITTS
-## Github Berisikan Syntax Program & PPT (Hasil Final (PPT & CODE)
+## Syntax Program & PPT (Hasil Final (PPT & CODE)
  ### Anggota kelompok 5:
  ####   1. Thesion Marta - 1206210004
  ####   2. Fikrie Hartanta - 1206210007

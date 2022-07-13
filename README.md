@@ -6,5 +6,5 @@
  ####   3. Rizal Rahman Rizkika -1206210010
  ####   4. Senna Yoga - 1206210012
  ####   5. Avriono Aritonang - 1206210012
- \n
+ '\n'
 *File IPYNB dan PPT ada dalam folder: Hasil Final(PPT & CODE)

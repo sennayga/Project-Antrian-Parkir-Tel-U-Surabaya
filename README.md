@@ -7,4 +7,4 @@
  ####   4. Senna Yoga - 1206210012
  ####   5. Avriono Aritonang - 1206210012
 _____________________________________________________________
-*File IPYNB dan PPT ada dalam folder: Hasil Final(PPT & CODE)
+*File IPYNB dan PPT ada dalam folder: Hasil Final(PPT & Source Code)

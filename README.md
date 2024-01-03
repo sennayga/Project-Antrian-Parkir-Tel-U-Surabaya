@@ -1,4 +1,4 @@
-# (ADS) Kasus 1 - <b>Program Antrian Parkir Telkom University Surabaya</b>
+# (ADS) Kasus 1 - Program Antrian Parkir Telkom University Surabaya
 ## Source Code (Python) & PPT
  ### Anggota kelompok 5:
  ####   1. Thesion Marta - 1206210004

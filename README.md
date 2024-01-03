@@ -7,5 +7,6 @@
  ####   4. Senna Yoga - 1206210012
  ####   5. Avriono Aritonang - 1206210012
 _____________________________________________________________
-*Project Algoritma Struktur Data</n>
+*Project Algoritma Struktur Data
+
 *File IPYNB dan PPT ada dalam folder: Hasil Final(PPT & Source Code)
